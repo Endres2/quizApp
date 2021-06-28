@@ -1,0 +1,61 @@
+*{
+    background-color: blanchedalmond;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+header{
+    padding: 5%;
+}
+h1{
+    font-size: 300%;
+    padding: 5%;
+}
+h2{
+    font-size: 200%;
+}
+button{
+    font-size: 200%;
+    background-color: cornsilk;
+}
+button:hover{
+    font-size: 210%;
+    background-color: darkkhaki;
+    cursor: grab;
+    
+}
+a{
+    color: black;
+    padding: 0 1%;
+    border: solid 2px black;
+    display: inline;
+    text-decoration: none;
+    background-color: cornsilk;
+}
+a:hover{
+    font-size: 102%;
+    background-color: darkkhaki;
+    cursor: grab;
+}
+.timer{
+    margin: 2% 5%;
+    font-size: 200%;
+    text-align: right;
+}
+.scores{
+    text-decoration: none;
+    margin: 2% 5%;
+    font-size: 200%;
+    text-align: right;
+}
+.questions{
+    
+    margin: 1% 0;
+
+}
+.choices{
+    margin: 1% 0;
+    font-size: 150%;
+}
+.hidden{
+    display: none;
+}
