@@ -7,16 +7,21 @@
         <title>Quiz app</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS STYLES -->
         <link rel="stylesheet" href="./assets/reset.css">
         <link rel="stylesheet" href="./assets/styles.css">
     </head>
     <body>
+        <!-- Link to scores.html -->
         <div class= "scores"><a href="scores.html">View Scores</a></div>
+        <!-- Time to be siplayed during quiz -->
         <div class = "timer">Time: <span id = "time">0</span></div>
+        <!-- Start Screen -->
         <header id = "start-screen">
             <h1>Are you ready for the quiz?!?!</h1>
             <button id = "start">Start</button>
         </header>
+        <!-- Question Screen -->
         <div class="question-card hidden">
             <h2 id = "questionTitle" class="question-title"></h2>
             <div >
@@ -29,6 +34,7 @@
             </div>
             <h2 id="answer"></h2>
         </div>
+        <!-- Submit Scores Screen -->
        <div id="end-screen" class = "hidden">
            <h2>Test is done!</h2>
            <p>Your final score is <span id="final-score"></span>.</p>
@@ -40,6 +46,7 @@
         
         
     </body>
+    <!-- Links to js logic -->
     <script src="./js/questions.js" async defer></script>
     <script src="./js/logic.js" async defer></script>
 </html>

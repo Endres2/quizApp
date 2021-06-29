@@ -4,6 +4,7 @@
     text-align: center;
     
 }
+/* GENERAL STYLES FOR PAGE */
 header{
     padding: 5%;
 }
@@ -89,6 +90,7 @@ p{
 input{
     font-size: 150%;
 }
+/* SCORE BOARD CSS */
 h3{
     position: relative;
     border: solid 2px wheat;
