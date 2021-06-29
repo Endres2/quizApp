@@ -17,7 +17,7 @@ var finalScore = document.querySelector("#final-score");
 var whatAnswer = document.querySelector("#answer");
 var score;
 //After clicking button Start the quiz starts
-var startQuiz = function(){
+startBtn.addEventListener("click", function(event){
     //Removes starts screen
     startScreen.setAttribute("class","hidden");
     //Shows question Screen
@@ -28,7 +28,7 @@ var startQuiz = function(){
     startTimer();
     //Loads questions
     getQuestions();
-}
+});
 //First time loading this method populates question title and options using global index
 var getQuestions = function(){
     
@@ -119,7 +119,7 @@ var endGame  = function(){
     finalScore.textContent = score;
 }
 //**********************EVENT LISTENERS *********************************/
-startBtn.addEventListener("click", startQuiz);
+
 option1.addEventListener("click", checkAnswer);
 option2.addEventListener("click", checkAnswer);
 option3.addEventListener("click", checkAnswer);
@@ -128,12 +128,19 @@ option4.addEventListener("click", checkAnswer);
 //************************SCORE BOARD**************************************/
 
 var subBtn = document.querySelector("#submit");
-var playerName = document.querySelector("#name")
-subBtn.addEventListener("click", function(event){
-    var playerScore = {
-        name: layerName.value,
-        finalScore: score.value 
-    };
+var playerName = document.querySelector("#name");
+var playerList = document.querySelector("#player-list");
 
-    localStorage.setItem("PlayerScore",JSON.stringify(playerScore));
-})
+//When submit is clicked we log the score and the player name in an object player score, and push this object to an array Log players
+subBtn.addEventListener("click", function(event){
+    var logPlayers = JSON.parse(window.localStorage.getItem("scores")) || [];
+    var playerScore = {
+        name: playerName.value.trim(),
+        endScore: score 
+    };
+    
+    //Stringify the object
+    logPlayers.push(playerScore);
+    localStorage.setItem("scores",JSON.stringify(logPlayers));
+    
+});

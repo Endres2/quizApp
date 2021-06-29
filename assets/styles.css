@@ -35,8 +35,14 @@ a{
 }
 a:hover{
     font-size: 102%;
-    background-color: burlywood;
+    background-color: wheat;
     cursor: grab;
+}
+#submit > a{
+    border: none;
+    border: none;
+    padding: 0;
+    display: block;
 }
 .timer{
     margin: 2% 5%;
@@ -74,7 +80,7 @@ li{
 }
 li:hover{
     font-size: 153%;
-    background-color: burlywood;
+    background-color: wheat;
 }
 p{
     font-size: 150%;
@@ -82,4 +88,26 @@ p{
 }
 input{
     font-size: 150%;
+}
+h3{
+    position: relative;
+    border: solid 2px wheat;
+    font-size: 200%;
+    margin: 3% 0;
+    background-color: cornsilk;
+}
+.scoreboard{
+    position: relative;
+    left: 25%;
+    background-color:wheat;
+    width: 50%;
+}
+.scoreboard-title{
+    border-radius: 50%;
+    position: relative;
+    left: 27.5%;
+    width: 35%;
+    background-color: cornsilk;
+    border: solid 2px black;
+
 }
