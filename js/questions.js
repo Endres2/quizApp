@@ -11,7 +11,7 @@ var questions = [
     },
     {
         title: "What is my favorite day at the gym?",
-        choice: ["Legas and shoulders", "Arms", "Chest and back", "Cardio and abs"],
+        choice: ["Legs and shoulders", "Arms", "Chest and back", "Cardio and abs"],
         answer: "Chest and back"
     },
     {
